@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckcdcq7c74vf8"]
+
+[ext_resource type="Script" path="res://scripts/gegner.gd" id="1_31cym"]
+[ext_resource type="Texture2D" uid="uid://dlf41a8khg034" path="res://assets/Redesign/Semester_Projekt/enemy.png" id="2_vehe4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_twei5"]
+size = Vector2(30, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4xf2m"]
+size = Vector2(32.3988, 77.9001)
+
+[node name="Gegner" type="CharacterBody2D"]
+script = ExtResource("1_31cym")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.268109, 0.290951)
+texture = ExtResource("2_vehe4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_twei5")
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+visible = false
+position = Vector2(3.90314e-05, -0.577726)
+scale = Vector2(1.04942, 0.447298)
+shape = SubResource("RectangleShape2D_4xf2m")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(-19, 2)
+target_position = Vector2(0, 15)
+
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
