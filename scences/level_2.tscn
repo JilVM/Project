@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dtyb8xgrsqsb" path="res://assets/Redesign/Titelloses 294_20240313091626.png" id="1_34rm3"]
 [ext_resource type="Script" path="res://scripts/level_2.gd" id="1_cv4od"]
-[ext_resource type="Texture2D" uid="uid://cdqwbts3ap3e1" path="res://assets/Testing/Assets.png" id="1_sj4a1"]
+[ext_resource type="Texture2D" uid="uid://cdqwbts3ap3e1" path="res://assets/Assets.png" id="1_sj4a1"]
 [ext_resource type="PackedScene" uid="uid://vm2loxsjowvq" path="res://scences/moving_platform_up.tscn" id="3_hfcrp"]
 [ext_resource type="PackedScene" uid="uid://dgcrxaabep4ag" path="res://scences/player.tscn" id="3_xk3tx"]
 [ext_resource type="PackedScene" uid="uid://df1x3pynjdrmq" path="res://scences/moving_platform_down.tscn" id="4_f6pa1"]
